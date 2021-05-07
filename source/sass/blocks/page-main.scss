@@ -1,0 +1,25 @@
+.page-main__wrapper {
+  background-image: url("../img/background-triangle-without-points-left.svg"),
+    url("../img/background-triangle-without-points-right.svg"),
+    url("../img/background-triangle-with-points-left.svg"),
+    url("../img/background-triangle-with-points-right.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% - 637px) 4.6%, calc(50% + 830px) 47%, calc(50% + 44px) 40%, calc(50% - 662px) 121%;
+  background-size: 225px, 220px, 870px, 580px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .page-main__wrapper {
+    background-image: url("../img/background-triangle-with-points-left.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 261px) 37%;
+    background-size: 872px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-main__wrapper {
+    background-position: calc(50% + 156px) 70.5%;
+    background-size: 867px;
+  }
+}

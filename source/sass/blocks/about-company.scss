@@ -1,0 +1,112 @@
+.about-company {
+  position: relative;
+  padding-top: 105px;
+  padding-left: calc(50% + 80px - 25vw);
+  padding-right: calc(50% - 100px - 25vw);
+  padding-bottom: 110px;
+  color: $color-grey;
+}
+
+.about-company::before {
+  @include pseudo-clases;
+  top: 110px;
+  left: calc(50% - 100px - 25vw);
+  width: 120px;
+  height: 317px;
+  background-image: url("../img/2005@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/2005@2x.jpg");
+  }
+}
+
+.about-company h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+}
+
+.about-company p {
+  margin-top: 20px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-company-button {
+  margin-top: 40px;
+  width: 180px;
+  border: 1px solid $color-light-blue;
+  color: $color-light-blue;
+}
+
+@media (max-width: $tablet-max-width) {
+  .about-company {
+    padding-top: 52px;
+    padding-left: calc(50% + 18px - 25vw);
+    padding-right: calc(50% - 165px - 25vw);
+    padding-bottom: 84px;
+  }
+
+  .about-company::before {
+    top: 56px;
+    left: calc(50% - 167px - 25vw);
+    width: 137px;
+    height: 360px;
+  }
+
+  .about-company h2 {
+    font-size: 32px;
+    line-height: 54px;
+  }
+
+  .about-company p {
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
+
+  .about-company p:nth-of-type(2n)::after {
+    content: "..";
+  }
+
+  .about-company span {
+    display: none;
+  }
+
+  .about-company-button {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about-company {
+    padding-top: 56px;
+    padding-left: calc(50% - 75px - 22vw);
+    padding-right: calc(50% - 75px - 22vw);
+    padding-bottom: 64px;
+  }
+
+  .about-company::before {
+    display: none;
+  }
+
+  .about-company h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .about-company p {
+    margin-top: 20px;
+  }
+
+  .about-company p:nth-of-type(2n) {
+    margin-top: 40px;
+  }
+
+  .about-company-button {
+    margin-top: 30px;
+  }
+}

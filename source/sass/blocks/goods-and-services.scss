@@ -1,0 +1,134 @@
+.goods-and-services {
+  padding-top: 57px;
+  padding-left: calc(50% - 100px - 25vw);
+  padding-right: calc(50% - 114px - 25vw);
+  padding-bottom: 125px;
+  background-color: $color-dark-blue;
+  color: $color-white;
+}
+
+.goods-and-services h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.goods-and-services__list {
+  @include reset-list-style;
+  margin-top: 49px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.goods-and-services__list li {
+  position: relative;
+  width: 100%;
+}
+
+.goods-and-services__list a {
+  @include reset-link-style;
+
+  &::after {
+    @include pseudo-clases;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $color-light-blue;
+    background-image: url("../img/icon-right-arrow.svg");
+    background-size: 8px;
+    opacity: 1;
+  }
+}
+
+.goods-and-services__list span {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white;
+}
+
+.goods-and-services__list img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+@media (max-width: $tablet-max-width) {
+  .goods-and-services {
+    padding-top: 23px;
+    padding-left: calc(50% - 167px - 25vw);
+    padding-right: calc(50% - 168px - 25vw);
+    padding-bottom: 75px;
+  }
+
+  .goods-and-services h2 {
+    width: 620px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .goods-and-services__list {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 41px;
+  }
+
+  .goods-and-services__list li {
+    height: 98.46%;
+  }
+
+  .goods-and-services__list li:first-child {
+    width: 99.3%;
+  }
+
+  .goods-and-services__list span {
+    top: 40px;
+  }
+
+  .goods-and-services__list-third-link > span {
+    top: 52px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .goods-and-services {
+    padding-top: 27px;
+    padding-left: calc(50% - 75px - 22vw);
+    padding-right: calc(50% - 75px - 22vw);
+    padding-bottom: 60px;
+  }
+
+  .goods-and-services h2 {
+    margin-left: 11px;
+    width: 280px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .goods-and-services__list {
+    margin-top: 42px;
+    grid-row-gap: 25px;
+  }
+
+  .goods-and-services__list li:first-child {
+    width: 100%;
+  }
+
+  .goods-and-services__list span {
+    top: 20px;
+    left: 36px;
+  }
+
+  .goods-and-services__list-third-link > span {
+    top: 30px;
+  }
+}

@@ -7,6 +7,15 @@
 @mixin reset-link-style {
   color: inherit;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @mixin pseudo-clases {

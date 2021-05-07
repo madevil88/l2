@@ -8,7 +8,13 @@
 @import "blocks/global-options";
 // примеси
 @import "blocks/mixins";
+// общие настройки кнопок
+@import "blocks/button";
 @import "blocks/page-header";
-@import "blocks/promotions";
+@import "blocks/page-main";
 @import "blocks/advantages";
+@import "blocks/about-company";
+@import "blocks/goods-and-services";
+@import "blocks/feedback-form";
 @import "blocks/page-footer";
+@import "blocks/popup-feedback";
