@@ -1,6 +1,16 @@
 _Не удаляйте и не обращайте внимание на файлы:
 _`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package-lock.json`, `package.json`._
 
+Проект: Smart Device
+ТЗ: https://www.notion.so/htmlacademy/Smart-Device-3-251f35275adb4c7caf8a03df0b85571d
+Макеты: https://www.figma.com/file/Kd0hkTD5bQE8Q7v6ocS8ec/Smart-Device-(New)?node-id=0%3A1
+Репозиторий: https://github.com/madevil88/smart_device
+Дата старта: 27.04.2021
+Дата сдачи: 07.05.2021
+Менеджер: Дарья Зенькович
+Тестировщик: Евгения Рябикова
+Наставник: Егор Глебов
+Исполнитель: Сергей Черненко
 ---
 
 ### Памятка
