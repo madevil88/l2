@@ -34,8 +34,16 @@
     for (let i = 0; i < sectionButtons.length; i++) {
       pageFooterSections[i].classList.remove('page-footer__section--nojs');
       pageFooterSections[i].classList.add('page-footer__section--closed');
+
       sectionButtons[i].addEventListener('click', () => {
+        pageFooterSections[i].classList.add('active');
+        pageFooterSections.forEach((pageFooterSection) => {
+          if (!pageFooterSection.classList.contains('active')) {
+            pageFooterSection.classList.add('page-footer__section--closed');
+          }
+        });
         pageFooterSections[i].classList.toggle('page-footer__section--closed');
+        pageFooterSections[i].classList.remove('active');
       });
     };
   }

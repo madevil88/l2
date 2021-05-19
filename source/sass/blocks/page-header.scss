@@ -1,8 +1,8 @@
 .page-header {
   display: grid;
-  padding-left: calc(50% - 222px - 25vw);
+  padding-left: calc(50% - 220px - 25vw);
   padding-right: calc(50% - 233px - 25vw);
-  padding-top: 31px;
+  padding-top: 28px;
   padding-bottom: 90px;
   background-color: $color-dark-blue;
   background-image: url("../img/background-rain@1x.png"),
@@ -22,8 +22,8 @@
 
 .page-header__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 
 .page-header__contacts {
@@ -31,6 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
+  max-width: 980px;
 }
 
 .page-header__contacts li {
@@ -41,11 +42,12 @@
 .page-header__contacts a {
   @include reset-link-style;
   font-family: "PT Mono", "Arial", sans-serif;
+  line-height: 40px;
 }
 
 .page-header__contacts a::before {
   @include pseudo-clases;
-  top: 0;
+  top: 10px;
 }
 
 .page-header__contacts a[data-name="email"]::before {
@@ -203,12 +205,17 @@
 
 @media (max-width: $mobile-max-width) {
   .page-header {
-    padding-left: calc(50% - 75px - 22vw);
-    padding-right: calc(50% - 75px - 22vw);
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 17px;
     padding-bottom: 70px;
     background-position: 50% 50%, 55.5% -135px, calc(50% + 16px) 21.5%;
     background-size: cover, 1445px, 300px;
+  }
+
+  .page-header__wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .page-header__logo {
@@ -231,6 +238,8 @@
   .page-header__promo {
     margin-top: 231px;
     margin-left: 0;
+    padding-left: calc(50% - 75px - 22vw);
+    padding-right: calc(50% - 75px - 22vw);
     width: 290px;
   }
 
