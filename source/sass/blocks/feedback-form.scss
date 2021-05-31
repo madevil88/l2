@@ -70,6 +70,7 @@
   border: none;
   resize: none;
   cursor: pointer;
+  -webkit-appearance: none;
 
   &:hover,
   &:focus {
@@ -169,6 +170,7 @@
   background-color: transparent;
   order: 3;
   cursor: pointer;
+  -webkit-appearance: none;
 
   &:hover,
   &:focus {
