@@ -7,7 +7,7 @@
 
 .page-footer__top-wrapper {
   display: grid;
-  grid-template-columns: minmax(225px, 28%) minmax(420px, 45%) minmax(338px, 23%);
+  grid-template-columns: minmax(230px, 28%) minmax(420px, 45%) minmax(298px, 23.9%);
   grid-column-gap: calc(95% - 495px - 43vw);
   grid-row-gap: 40px;
   margin-left: calc(50% - 260px - 23vw);
@@ -82,7 +82,7 @@
   column-count: 2;
   column-fill: auto;
   column-gap: 5px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .page-footer__site-sections-list li {
@@ -107,7 +107,7 @@
 
 .page-footer__our-office p {
   margin: 0;
-  margin-top: 26px;
+  margin-top: 22px;
 }
 
 .page-footer__phone-list {
